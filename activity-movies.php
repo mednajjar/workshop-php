@@ -1,4 +1,7 @@
 <?php
+
+function details($NbrR, $NbrF){
+
 $list=array('author1' =>array("la gloire de mon pére",
 "antigone",
 "vendredi au la vie sauvage",
@@ -26,22 +29,23 @@ $list=array('author1' =>array("la gloire de mon pére",
 "balzac5"),
 );
 
+$A = array_rand($list, $NbrR);
+$B = array_rand($A, $NbrF);
 
-foreach($list as $cle=>$valeur)
+foreach($A as $cle=>$realisateur)
 {
-echo "<h1> Les films de $cle : </h1><br>";
-foreach($valeur as $ind=>$val)
+echo "<h1> Les films de $realisateur : </h1><br>";
+foreach($B as $x)
 {
-echo "<li>". $val ."</li><br>
+    
+echo "<li>". $list[$realisateur][$x] ."</li><br>
 ";
 }
 }
 
 
+}details(3,3);
+
+    
+    
 ?>
-
-
-
-
-
-
