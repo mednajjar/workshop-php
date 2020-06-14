@@ -1,7 +1,7 @@
 <?php
-
+ 
 function details($NbrR, $NbrF){
-
+   
 $list=array('author1' =>array("la gloire de mon pére",
 "antigone",
 "vendredi au la vie sauvage",
@@ -44,7 +44,7 @@ echo "<li>". $list[$realisateur][$x] ."</li><br>
 }
 
 
-}details(3,3);
+}details(3,2);
 
     
     
